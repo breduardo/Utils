@@ -1,14 +1,14 @@
-export const ISODateToBrazilString = (date) => {
+const ISODateToBrazilString = (date) => {
   var dateArray = date.split("-");
   return dateArray[2] + "/" + dateArray[1] + "/" + dateArray[0];
 };
 
-export const DateBrazilToISODate = (date) => {
+const DateBrazilToISODate = (date) => {
   var dateArray = date.split("/");
   return dateArray[2] + "-" + dateArray[1] + "-" + dateArray[0];
 };
 
-export const ListaUltimosSeisMeses = () => {
+const ListaUltimosSeisMeses = () => {
   var meses = [
     "Janeiro",
     "Fevereiro",
@@ -41,7 +41,7 @@ export const ListaUltimosSeisMeses = () => {
   return listaMeses;
 };
 
-export const DateTimeBrazilToISODateTime = (date) => {
+const DateTimeBrazilToISODateTime = (date) => {
   var dateArray = date.split(" ");
   var dateArray2 = dateArray[0].split("/");
   var timeArray = dateArray[1].split(":");
@@ -60,7 +60,7 @@ export const DateTimeBrazilToISODateTime = (date) => {
   );
 };
 
-export const IsoDateTimeToBrazilString = (date) => {
+const IsoDateTimeToBrazilString = (date) => {
   var dateArray = date.split(" ");
   var dateArray2 = dateArray[0].split("-");
   var timeArray = dateArray[1].split(":");

@@ -1,13 +1,9 @@
-const GetKeyByValue = (object, value) => {
-  return Object.keys(object).find((key) => object[key] === value);
-};
-
-const Format = require("./Format");
-const Date = require("./Date");
-
+const Format = require("./src/Format");
+const Date = require("./src/Date");
+const Object = require("./src/Object");
 module.exports = {
   Format,
-  Validate: require("./Validate"),
-  GetKeyByValue,
+  Validate: require("./src/Validate"),
+  Object,
   Date,
 };

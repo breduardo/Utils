@@ -1,5 +1,5 @@
 module.exports = {
-  ApenasNumeros: (valor) => {
+  OnlyNumbers: (valor) => {
     return valor.replace(/\D/g, "");
   },
 };
