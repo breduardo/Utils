@@ -64,7 +64,9 @@ Object.keys(ColorTags).forEach((color) => {
   colorLog[color] = (...args) => {
     console.log(
       ...args.map((it) =>
-        typeof it === "string" ? colorString(color, it) : it
+        typeof it === "string"
+          ? colorString(color, it)
+          : colorString(color, JSON.stringify(it))
       )
     );
   };
