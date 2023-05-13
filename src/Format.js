@@ -17,4 +17,7 @@ module.exports = {
   RemoveNumbers: (valor) => {
     return valor.replace(/[0-9]/g, "");
   },
+  MoneyRealToFloat: (valor) => {
+    return parseFloat(valor.replace("R$", "").replace(",", "."));
+  },
 };
